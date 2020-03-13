@@ -5,4 +5,4 @@ title: Home Page
 layout: default
 ---
 
-# Welcome to nez
+# Welcome to Nez
