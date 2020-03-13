@@ -1,0 +1,23 @@
+title: Nez Docs
+description: >-
+  Nez provides a layer of abstraction over top of the XNA library of your choice (Monogame or FNA)
+  with many conveniences out of the box for extremely fast prototyping and comfortable development
+  when it comes time to create your full game.
+
+baseurl: "/Nez-Documentation" 
+url: "https://jonsnowbd.github.io"
+ga_tracking: UA-160364293-1
+source: ./src/
+
+heading_anchors: true
+
+aux_links:
+  "Nez Source Code":
+    - "https://github.com/prime31/Nez"
+
+
+theme: "just-the-docs"
+remote_theme: pmarsceill/just-the-docs
+color_scheme: "dark"
+plugins:
+  - jekyll-feed
