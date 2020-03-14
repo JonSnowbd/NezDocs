@@ -37,6 +37,8 @@ a way to update it later.
 And then we added nez to our solution by adding it as a submodule. What this means is that it is
 stored as a pointer to the actual git project, making it super easy to update nez down the line!
 
+----
+
 ### Modify the project and install Monogame
 
 In `GameSource/GameSource.csproj` we're going to make a few changes.
@@ -93,6 +95,8 @@ So that the entire file looks something like this
 
 ```
 
+---
+
 ### Create the bare minimum to run a Nez Project
 
 We then create a file `NezExample/GameSource/GameCore.cs` with the following contents
@@ -136,7 +140,6 @@ by opening the solution file with Visual Studio and selecting `GameSource` as yo
 should see a screen like this
 
 ![The resulting gamewindow]({{site.baseurl}}/assets/example/BaseGame.png)
-
 
 ### Clean up and register all our projects
 

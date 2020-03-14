@@ -5,9 +5,12 @@ parent: Features
 nav_order: 2
 ---
 
+ImGUI is an immediate mode UI used to very quickly and cleanly create development GUI to debug your
+content, or to create custom editors/inspectors for your game.
+
 ## Enabling ImGUI
 
-For a basic ImGui inspector in Nez there are 2 things you need to do, first of which is to 
+For a basic ImGUI inspector in Nez there are 2 things you need to do, first of which is to 
 reference `Nez/Nez.ImGui/Nez.ImGui.csproj` in your Game's `.csproj`:
 
 ```xml
@@ -46,11 +49,13 @@ public class GameCore : Core
 }
 ```
 
+-----
+
 ## Using ImGUI Directly
 
-You may have noticed that you cannot use ImGui directly, this is because the
-[ImGui Framework](https://github.com/mellinoe/ImGui.NET) that nez uses is not re-exported. To
-use the ImGui Library directly its recommended to add a reference to it to your Game's `.csproj`:
+You may have noticed that you cannot use ImGUI directly, this is because the
+[ImGui Framework](https://github.com/mellinoe/ImGui.NET) that Nez uses is not re-exported. To
+use the ImGUI Library directly its recommended to add a reference to it to your Game's `.csproj`:
 
 ```xml
 <ItemGroup> <!-- Remember this doesnt have to be by itself, you can add this to any ItemGroup -->
@@ -61,7 +66,7 @@ use the ImGui Library directly its recommended to add a reference to it to your 
 **Note: It is very important that you specifically install `1.71.0` as it is what Nez uses under
 the hood. Anything else could have type mismatches.**
 
-And you can now directly use the ImGui by registering draw commands. As an example in an arbitary
+And you can now directly use the ImGUI by registering draw commands. As an example in an arbitary
 `Scene`:
 
 ```csharp
@@ -102,10 +107,12 @@ namespace GameSource.Scenes
 }
 ```
 
+-----
+
 ## Learning more about ImGUI
 
 If you're curious on what ImGUI can do, or how to do it, Nez by default includes a demo window
-that shows off everything that ImGui can do, you can cross reference this panel with everything
+that shows off everything that ImGUI can do, you can cross reference this panel with everything
 inside [this file](https://github.com/ocornut/imgui/blob/master/imgui_demo.cpp). The method names
 are the exact same and pointers are replaced with `ref`.
 
