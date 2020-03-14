@@ -44,7 +44,7 @@ function initNav() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
-  request.open('GET', 'https://jonsnowbd.github.io/Nez-Documentation/assets/js/search-data.json', true);
+  request.open('GET', 'https://jonsnowbd.github.io/NezDocs/assets/js/search-data.json', true);
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {

@@ -1,7 +1,7 @@
 # System
 source: ./src/
 remote_theme: pmarsceill/just-the-docs
-baseurl: "/Nez-Documentation" 
+baseurl: "/NezDocs" 
 url: "https://jonsnowbd.github.io"
 
 # Site
