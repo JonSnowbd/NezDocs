@@ -125,6 +125,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
+.highlight { text-align: left !important; }
+
 * { box-sizing: border-box; }
 
 ::selection { color: #fff; background: #e94c4c; }
@@ -2168,3 +2170,5 @@ pre.highlight code, figure.highlight code { padding: 0; border: 0; }
 .logo { image-rendering: pixelated; image-rendering: crisp-edges; margin-right: 4px; }
 
 .side-bar { background: #27262b; background: linear-gradient(90deg, rgba(39, 38, 43, 0) 90%, rgba(213, 87, 15, 0.1) 100%); }
+
+.single-content { margin: auto !important; text-align: center !important; }

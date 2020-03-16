@@ -31,8 +31,8 @@
     "relUrl": "/install/"
   }
   ,"5": {
-    "title": "Home Page",
-    "content": "Welcome to Nez .",
+    "title": "Home",
+    "content": "Nez . 2D Based Monogame/FNA Framework . Get Started . Learn More . . Components . // Easily create reusable pieces of logic that can apply to every // game object! public class Oscillate : Component, IUpdatable { public Vector2 Direction = new Vector2(1f, 0f); public float Speed = 2f; public float Strength = 20f; void IUpdatable.Update() { var amount = Mathf.Sin(Time.TimeSinceSceneLoad * Speed) * 0.15915482422f; Entity.Position += Direction * amount * Time.DeltaTime * (Strength * Speed); } } . Content Management . // Be done with the MGCB pipeline. Load your assets directly, in project // or anywhere with an absolute path for external assets! PlayerAtlas = Scene.Content.LoadTexture(&quot;Content/Atlas/Player.png&quot;); PlayerJump = Scene.Content.LoadSoundEffect(&quot;Content/Sound/PlayerJump.ogg&quot;); // Worry not, disposing is handled for you when the scene is gone . Amazing Input . // Virtual inputs make creating powerful control schemes easy, quick // and most importantly strongly typed. JumpButton = new VirtualButton(); JumpButton.AddGamePadButton(GamepadIndex, Buttons.A); JumpButton.AddKeyboardKey(Keys.Space); JumpButton.AddKeyboardKey(Keys.W); if (JumpButton.IsPressed) { // Easy to use too! } . Easy Debugging . // Static methods to add debug elements to the scene void IUpdatable.Update() { if (JumpButton.IsPressed) { // Draw a debug text message for 2 seconds: Debug.DrawText(&quot;Debug Text!&quot;, 2f); // Draw a jump trajectory for 2 seconds: Debug.DrawLine(Entity.Position, GetJumpTarget(), Color.White, 2f); } } // Or an override in `Component` to draw constant debug overlays public override void DebugRender(Batcher batcher) { base.DebugRender(batcher); // Make a green circle follow the entity: batcher.DrawCircle(Entity.Position, 5f, Color.Green); } . I’m In! .",
     "url": "https://jonsnowbd.github.io/NezDocs/",
     "relUrl": "/"
   }
